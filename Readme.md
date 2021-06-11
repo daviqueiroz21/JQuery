@@ -91,3 +91,51 @@ $(function() {
 ~~~
 ```
 
+
+
+- #### Mais eventos :zap:
+
+  
+
+```javascript
+~~~ JQuery
+$(function() {
+
+	// Ele cancela a propragação de alguma função relacionada ao elemento
+    /*Exemplo: criamos uma função na qual ao clicar no body ele muda a cor 
+    do box, logo o box está dentro do body, criando um conflito no qual ao 
+    clicar no box ira ativar a função é ai que vem a função stopPropagation(); */
+    
+	// Ela cancela a propragação de alguma função relacionada ao elemento
+    $('.box').click(function(e) {
+        e.stopPropagation(); 
+    })
+    
+    $('body').click(function() {
+        $('.box').css('background-color', 'green')
+    })
+
+   
+    var timer;
+
+    $(window).scroll(function() {
+        //Evento quando o scroll ocorre
+    })
+
+    $(window).resize(function() {
+        //Evento de quando redimensionamos a tela.
+        console.log("Minha tela está sendo redimencionada")
+        
+        // Limpa o tempo da variavel no parametro
+        clearTimeout(timer);
+
+       timer = setTimeout(function() {
+            location.href= "https://google.com";
+        }, 1000)
+    })
+    
+
+})
+~~~
+```
+
