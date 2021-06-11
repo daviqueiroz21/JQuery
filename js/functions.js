@@ -1,5 +1,30 @@
+
+/*
+
+VAR COM JQUERY
+
+$(function() {
+    var el = $('div.box')
+
+    el.css('background-color', 'green')
+
+        function teste() {
+            el.click(function() {
+                el.css('background-color', 'red')
+            })
+        }
+
+        teste();
+
+})
+
+*/
+
+
+/*
 $(function() {
 
+    Evento Stop progagação
 
     $('.box').click(function(e) {
         e.stopPropagation(); 
@@ -9,7 +34,6 @@ $(function() {
         $('.box').css('background-color', 'green')
     })
 
-    /*
     var timer;
 
     $(window).scroll(function() {
@@ -28,8 +52,9 @@ $(function() {
         }, 1000)
     })
     
-*/
 })
+*/
+
 
 /*
 $(function() {
@@ -73,6 +98,7 @@ Essa função ira mudar o background ao passar o mouse
 })
 */
 
+
 /*
 Função de Tempo
 
@@ -89,6 +115,7 @@ $(function() {
     $('.artigo1').css('padding','20px')
 })
 */
+
 
 /*
 
