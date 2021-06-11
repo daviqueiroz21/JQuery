@@ -139,3 +139,8 @@ $(function() {
 ~~~
 ```
 
+#### Manipulando dimensões
+
+- Pegando e setando Width e Height via JQuery
+
+  ​	<a href="/js/Manipulando_Dimensoes_Dinamicamente.js">Manipulando...</a>
